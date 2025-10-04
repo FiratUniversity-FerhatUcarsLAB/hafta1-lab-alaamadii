@@ -4,8 +4,14 @@ AD-SOYAD: Alaa Madi
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
 
 # to be spacific about this problem the best soultion for it is binary serch and in some cases Weighted Guessing, here are the whole solutions: 
-# Number Guessing Game - Main Algorithm (Binary Search)
 
+
+
+## Main Algorithm (Binary Search)
+
+**Goal:** Find the secret number efficiently using as few guesses as possible.  
+
+### Pseudocode
 1. Set low = minimum possible number
 2. Set high = maximum possible number
 3. While low ≤ high:
@@ -21,8 +27,15 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 4. End
 
 
-# Number Guessing Game - Variant A (Linear Search)
+**Explanation:**  
+Binary Search divides the range in half each time, minimizing the number of guesses required.
 
+
+## Variant A - Linear Search
+
+**Goal:** Sequentially guess numbers from minimum to maximum.  
+
+### Pseudocode
 1. Set guess = minimum possible number
 2. While guess ≤ maximum possible number:
     a. Ask: "Is the secret number equal to guess?"
@@ -32,8 +45,17 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
     c. Else:
         - guess = guess + 1
 3. End
-# Number Guessing Game - Variant B (Random Guessing)
 
+**Explanation:**  
+Simple and reliable, but may require many guesses for large ranges.
+
+
+
+## Variant B - Random Guessing
+
+**Goal:** Choose guesses randomly, eliminating numbers that have been guessed.  
+
+### Pseudocode
 1. Create a list of all possible numbers in the range
 2. While list is not empty:
     a. Randomly select a number from the list as guess
@@ -44,7 +66,16 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
     d. Else:
         - Remove guess from the list
 3. End
-# Number Guessing Game - Variant C (Weighted Guessing)
+
+**Explanation:**  
+Random guessing can be fun and effective in uncertain situations, but is less efficient than Binary Search.
+
+
+## Variant C - Weighted Guessing
+
+**Goal:** Use probabilities to guess numbers more likely to be correct.  
+
+### Pseudocode
 
 1. Assign probability weights to each number based on past trends or hints
 2. While unchecked numbers exist:
@@ -58,8 +89,12 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
         - Remove guess from list or set its probability = 0
 3. End
 
+**Explanation:**  
+Weighted guessing focuses on likely candidates first, optimizing for prior knowledge or hints.
+
+
 ## MLL conversation:
-Student: I have a problem and I should find the best algorithm for it. 
+Student: I have a problem and I should find the best algorithm for it act like problem solving and algorithm expert and help me. 
 I want to create an optimal strategy for a number guessing game. 
 Can you explain this problem more clearly for me?
 

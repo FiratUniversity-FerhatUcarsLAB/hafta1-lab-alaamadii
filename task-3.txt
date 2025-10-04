@@ -4,69 +4,99 @@ AD-SOYAD: Alaa Madi
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
 ##for this algorthim ( according to the time complexity )the Hash Table Search would be the best if i have the abbilty to make hash for every single book i have on my library, then the index search if i create an index for the books else we can use the binary search but for me if i would work on project like this i would use Hashes
 
-# Library Book Search - Linear Search
 
-1. Input: search_query (book title or author)
-2. For each book in library_list:
-    a. If book.title == search_query OR book.author == search_query:
-        - Print "Book found at shelf:", book.shelf
-        - Exit
-3. If no book found:
-    - Print "Book not found"
-4. End
+## Main Algorithm: Hash Table Search
 
+**Goal:** Quickly locate a book by title or author using a hash table for direct lookup.  
 
-# Library Book Search - Binary Search
+### Pseudocode
 
-1. Sort library_list by book.title or book.author
-2. Input: search_query
-3. low = 0
-4. high = length(library_list) - 1
-5. While low ≤ high:
-    a. mid = (low + high) / 2
-    b. If library_list[mid].title == search_query OR library_list[mid].author == search_query:
-        - Print "Book found at shelf:", library_list[mid].shelf
-        - Exit
-    c. Else if search_query < library_list[mid].title:
-        - high = mid - 1
-    d. Else:
-        - low = mid + 1
-6. If not found:
-    - Print "Book not found"
-7. End
+1. Create a dictionary: `key = book title or author`, `value = shelf`  
+2. Input: `search_query`  
+3. If `search_query in library_dict`:  
+    - Print "Book found at shelf:", `library_dict[search_query]`  
+4. Else:  
+    - Print "Book not found"  
+5. End  
 
-
-# Library Book Search - Index Search
-
-1. Create an index: dictionary of first letter -> list of books starting with that letter
-2. Input: search_query
-3. first_letter = first character of search_query
-4. If first_letter in index:
-    a. For each book in index[first_letter]:
-        - If book.title == search_query OR book.author == search_query:
-            - Print "Book found at shelf:", book.shelf
-            - Exit
-5. Else:
-    - Print "Book not found"
-6. End
+**Explanation:**  
+Hash Table Search has O(1) average time complexity, making it the fastest option if a hash table can be maintained for all books.
 
 
 
-# Library Book Search - Hash Table
+## Variant A - Linear Search
 
-1. Create a dictionary: key = book title or author, value = shelf
-2. Input: search_query
-3. If search_query in library_dict:
-    - Print "Book found at shelf:", library_dict[search_query]
-4. Else:
-    - Print "Book not found"
-5. End
+**Goal:** Search each book sequentially in the library list.  
 
+### Pseudocode
+
+1. Input: `search_query` (book title or author)  
+2. For each book in `library_list`:  
+   a. If `book.title == search_query OR book.author == search_query`:  
+       - Print "Book found at shelf:", `book.shelf`  
+       - Exit  
+3. If no book found:  
+    - Print "Book not found"  
+4. End  
+
+**Explanation:**  
+Simple and straightforward, but slow for large libraries (O(n)).
+
+
+
+## Variant B - Binary Search
+
+**Goal:** Use divide-and-conquer to locate a book in a sorted list.  
+
+### Pseudocode
+
+1. Sort `library_list` by `book.title` or `book.author`  
+2. Input: `search_query`  
+3. `low = 0`  
+4. `high = length(library_list) - 1`  
+5. While `low ≤ high`:  
+   a. `mid = (low + high) / 2`  
+   b. If `library_list[mid].title == search_query OR library_list[mid].author == search_query`:  
+       - Print "Book found at shelf:", `library_list[mid].shelf`  
+       - Exit  
+   c. Else if `search_query < library_list[mid].title`:  
+       - `high = mid - 1`  
+   d. Else:  
+       - `low = mid + 1`  
+6. If not found:  
+    - Print "Book not found"  
+7. End  
+
+**Explanation:**  
+Faster than linear search (O(log n)) but requires sorting first.
+
+
+
+## Variant C - Index Search
+
+**Goal:** Use a dictionary index based on the first letter of titles or authors.  
+
+### Pseudocode
+
+1. Create an index: dictionary of `first letter → list of books starting with that letter`  
+2. Input: `search_query`  
+3. `first_letter = first character of search_query`  
+4. If `first_letter in index`:  
+   a. For each book in `index[first_letter]`:  
+       - If `book.title == search_query OR book.author == search_query`:  
+           - Print "Book found at shelf:", `book.shelf`  
+           - Exit  
+5. Else:  
+    - Print "Book not found"  
+6. End  
+
+**Explanation:**  
+Index search reduces the number of comparisons by grouping books alphabetically.
 
 
 # LLM conversation
 
-Student: I have a problem and I should find the best algorithm for it. 
+Student: I have a problem and I should find the best algorithm for it act like professional problem solving expert and help me 
 I want to create a system to search for books in a library efficiently. Can you explain the problem?
 
 LLM: Sure! The problem is about finding a book quickly in a library. 

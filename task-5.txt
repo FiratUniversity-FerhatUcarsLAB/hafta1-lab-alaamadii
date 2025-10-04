@@ -6,6 +6,9 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 
 # Bus Catching 
+## Main Algorithm
+
+### Pseudocode
 
 1. Input:
    - bus_direction (Left or Right)
@@ -32,4 +35,29 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
    - departure_time (to leave home)
    - optimal_waiting_spot
 
-Using this algorithem you will be on the perfect possible position to get on the bus and even can find a seat.😏😉 
+
+
+**Explanation:**  
+This algorithm helps you arrive **just in time** at the optimal location to catch the bus, reducing waiting time and maximizing your chance to find a seat, even during severe crowding,
+Using this algorithem you will be on the perfect possible soultion 😄 . 
+
+
+
+## LLM Conversation Summary
+
+Student: I have a problem catching the dorm bus because of crowding. as problem solving and algorithem expert, How can I optimize departure and waiting spot?  
+
+LLM: Goals:  
+1. Minimize walking and waiting time  
+2. Choose the best position to board the bus  
+3. Consider traffic delays and bus arrival window  
+
+Student: How can I implement this as an algorithm?  
+
+LLM:  
+- Use inputs: direction, walking speed, distance, and traffic delay  
+- Calculate expected bus position based on direction  
+- Determine optimal waiting spot  
+- Compute latest departure time to reach the bus on time  
+- Output both departure time and waiting position  
+Student: can you help me writting the possible pseudo code? 

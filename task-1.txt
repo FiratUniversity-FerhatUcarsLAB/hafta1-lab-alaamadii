@@ -2,7 +2,7 @@
 AD-SOYAD: Alaa Madi
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
-
+for this problem the most logical soultion and can be fit for evey revision paln is variant A
 # Exam Study Plan - Main Version
 
 ## Pseudocode

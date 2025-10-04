@@ -5,7 +5,7 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 
 # Exam Study Plan - Main Version
 
-## Pseudocode
+## Pseudocode 
 
 1. Collect all topics to study
 2. For each topic:

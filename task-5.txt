@@ -1,4 +1,35 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 240541609
+AD-SOYAD: Alaa Madi
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+# I have problem in getting to the bus I live in FETHI SKIN YURDU and we have a special bus for the dorm its from the dorm to uni and from the uni to dorm so every time wither i go early or late i be unable to get on the bus becouse of the severe crowding  and miss my classes 😔 so here is Algorithem for this problem.
+
+
+# Bus Catching 
+
+1. Input:
+   - bus_direction (Left or Right)
+   - traffic_delay_range = [0 min, 30 min]  # bus may arrive anytime between 7:00–7:30
+   - walking_speed (meters/minute)
+   - distance_to_bus_stop (meters)
+
+2. Set expected_bus_position:
+   - If bus_direction == Left:
+       expected_bus_position = midpoint of 0 to 10 meters
+       go to the left side
+   - Else if bus_direction == Right:
+       expected_bus_position = midpoint of 10 to 20 meters
+       go to the right side
+
+3. Set optimal_waiting_spot = expected_bus_position
+
+4. Calculate latest_departure_time:
+   - time_to_walk = distance_to_bus_stop / walking_speed
+   - latest_bus_arrival_time = 7:30  # bus leaves at 7:30
+   - departure_time = latest_bus_arrival_time - time_to_walk
+
+5. Output:
+   - departure_time (to leave home)
+   - optimal_waiting_spot
+
+Using this algorithem you will be on the perfect possible position to get on the bus and even can find a seat.😏😉 

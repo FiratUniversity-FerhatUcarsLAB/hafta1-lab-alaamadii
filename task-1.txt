@@ -1,4 +1,97 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 240541609
+AD-SOYAD: Alaa Madi
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+# Exam Study Plan - Main Version
+
+## Pseudocode
+
+1. Collect all topics to study
+2. For each topic:
+    a. Assess difficulty (easy, medium, hard)
+    b. Assign priority based on difficulty (hard → high priority)
+3. Estimate total available study time
+4. Allocate study time per topic according to priority
+5. For each topic:
+    a. While understanding < 100%:
+        i. Review topic
+        ii. Take breaks if needed
+6. After all topics are covered, do a final comprehensive review
+7. End
+
+# Exam Study Plan - Variant A
+
+## Pseudocode
+
+1. Collect all topics to study
+2. For each topic:
+    a. Identify exam weight (high, medium, low)
+    b. Assign priority based on exam weight (high → first)
+3. Estimate total available study time
+4. Allocate time per topic based on priority
+5. For each topic:
+    a. While understanding < 100%:
+        i. Review topic
+        ii. Solve sample questions
+6. Final comprehensive review for all topics
+7. End
+
+
+# Exam Study Plan - Variant B
+
+## Pseudocode
+
+1. Collect all topics to study
+2. Estimate total available study time
+3. Divide time equally among all topics
+4. For each topic:
+    a. Review topic
+    b. If topic is difficult:
+        i. Repeat review
+5. After all topics, do a final quick review of the weakest topics
+6. End
+
+
+
+## LLM conversation:
+Student: I have a problem and I should find the best algorithm for it. 
+I am studying and I need to make a revision plan for my exams week. 
+Can you tell me more about this problem and make it clearer for me?
+
+LLM: Sure! Let's break it down. 
+Your problem is about planning your study schedule efficiently for exam week. 
+The main goals are:
+1. Cover all subjects or topics you need to study before the exams.
+2. Focus more on topics you find difficult or are more important in the exam.
+3. Use your available time effectively, so nothing is left out.
+4. Repeat study sessions for weak topics to make sure you fully understand them.
+
+In real-life terms, it's like organizing your day to finish all tasks: 
+you decide what to do first, how much time to spend, and what to do if something takes longer than expected. 
+Similarly, your study plan algorithm will decide the order of topics, time allocation, and repetitions.
+
+Student: Okay, that makes sense. So how should I start creating the algorithm?
+
+LLM: A good approach is to break it into steps:
+1. Collect all topics you need to study.
+2. Assess the difficulty or priority of each topic.
+3. Estimate your total available study time.
+4. Allocate time to each topic according to its priority.
+5. For each topic:
+   - While understanding < 100%:
+       * Review the topic
+       * Take breaks if needed
+6. After all topics are covered, do a final comprehensive review.
+
+Student: Is there any other ways to solve this problem?
+
+LLM: Yes! You can create multiple versions:
+- **Variant A:** Prioritize topics based on their exam weight (high → first, low → last)
+- **Variant B:** Divide time equally among all topics, but repeat weak topics more often
+- **Variant C:** Focus on your weakest topics first, then cover the easier ones
+You can write pseudocode for each version and later compare advantages and disadvantages.
+
+Student: I want you to write all these solutions as pseudocode.
+
+

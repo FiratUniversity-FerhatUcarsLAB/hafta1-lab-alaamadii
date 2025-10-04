@@ -5,6 +5,8 @@ Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya e
 for this problem the most logical soultion and can be fit for evey revision paln is variant A
 # Exam Study Plan - Main Version
 
+
+## Main Version
 ## Pseudocode
 
 1. Collect all topics to study
@@ -20,7 +22,12 @@ for this problem the most logical soultion and can be fit for evey revision paln
 6. After all topics are covered, do a final comprehensive review
 7. End
 
-# Exam Study Plan - Variant A
+**Explanation:**  
+This main version is a general plan that balances difficulty and available time to ensure full coverage.
+
+# Variant A
+
+**Goal:** Prioritize topics based on exam weight. High-weight topics are studied first. 
 
 ## Pseudocode
 
@@ -36,9 +43,12 @@ for this problem the most logical soultion and can be fit for evey revision paln
         ii. Solve sample questions
 6. Final comprehensive review for all topics
 7. End
+**Explanation:**  
+Topics with the highest exam weight are studied first to maximize exam performance.
 
+#Variant B
 
-# Exam Study Plan - Variant B
+**Goal:** Divide time equally among all topics, but reinforce weak topics.  
 
 ## Pseudocode
 
@@ -52,10 +62,33 @@ for this problem the most logical soultion and can be fit for evey revision paln
 5. After all topics, do a final quick review of the weakest topics
 6. End
 
+**Explanation:**  
+Ensures every topic is studied while giving extra attention to weaker areas.
 
+
+## Variant C
+
+**Goal:** Focus on the weakest topics first, then cover the easier ones.  
+
+### Pseudocode
+
+1. Collect all topics to study  
+2. Assess difficulty or personal mastery of each topic  
+3. Sort topics by weakness (weakest → strongest)  
+4. Estimate total available study time  
+5. Allocate more time to weaker topics, less to stronger ones  
+6. For each topic:  
+   a. While understanding < 100%:  
+       i. Review topic  
+       ii. Solve exercises  
+7. Final comprehensive review of all topics  
+8. End  
+
+**Explanation:**  
+Prioritizes weak areas first, maximizing overall understanding before the exam.
 
 ## LLM conversation:
-Student: I have a problem and I should find the best algorithm for it. 
+Student: I have a problem and I should find the best algorithm for it act like problem solving expert help me solve it. 
 I am studying and I need to make a revision plan for my exams week. 
 Can you tell me more about this problem and make it clearer for me?
 

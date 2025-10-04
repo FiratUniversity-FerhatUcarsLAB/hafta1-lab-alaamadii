@@ -1,4 +1,99 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 240541609
+AD-SOYAD: Alaa Madi
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+#In fact, in this section there is no single algorithm that can be considered the most suitable for solving this problem, because the type of project that uses this algorithm must be defined first. Therefore, there is no "best algorithm" in general. In terms of time complexity, Binary Search is the fastest, but it does not always produce precise results.
+
+
+
+
+# Color Mixing - Brute Force
+
+1. Input: target_color (RGB values)
+2. Create a list of basic_colors (e.g., Red, Blue, Yellow)
+3. For each possible combination of basic_colors ratios:
+    a. Mix colors according to the ratios
+    b. If mixed_color == target_color:
+        - Print "Found solution: ratios for each color"
+        - Exit
+4. If no exact match found:
+    - Print "No exact solution found"
+5. End
+
+
+
+# Color Mixing - Divide & Conquer
+
+1. Input: target_color (R, G, B)
+2. For each component (R, G, B):
+    a. Determine which basic colors can contribute to this component
+    b. Mix these colors to achieve the component value
+3. Combine R, G, B components to get final color
+4. Print "Found solution: ratios for each color"
+5. End
+
+
+# Color Mixing - Greedy Approach
+
+1. Input: target_color
+2. Initialize mixed_color = (0, 0, 0)
+3. While mixed_color != target_color:
+    a. Find basic_color that reduces difference to target_color most
+    b. Add small amount of this basic_color to mixed_color
+    c. Update difference between mixed_color and target_color
+4. Print "Found solution: ratios for each color"
+5. End
+
+
+# Color Mixing - Binary Search on Ratios
+
+1. Input: target_color
+2. For each basic_color:
+    a. Set low = 0, high = max_possible_ratio
+    b. While low ≤ high:
+        - mid = (low + high)/2
+        - Add mid amount to mixed_color
+        - If mixed_color component > target_color component:
+            high = mid - 1
+        - Else if mixed_color component < target_color component:
+            low = mid + 1
+3. Combine all basic_color contributions
+4. Print "Found solution: ratios for each color"
+5. End
+
+
+# Color Mixing - Optimization / Approximation
+
+1. Input: target_color
+2. Initialize mixed_color = (0,0,0)
+3. Use mathematical optimization (e.g., linear combination, least squares)
+    - Find ratios of basic_colors that minimize difference to target_color
+4. Print "Approximated solution: ratios for each color"
+5. End
+
+#LLM conversation
+
+Student: I have a problem and I need to find the best algorithm for it. 
+The task is about solving a complex problem using a systematic approach. Can you explain it?
+
+LLM: Sure! This task is about applying the "Divide & Conquer" approach. 
+You break a complex problem into smaller subproblems, solve each subproblem, and then combine the solutions.
+
+Student: Can you give an example?
+
+LLM: For instance:
+- Multiplying two large numbers manually
+- Dividing a cake fairly among N people
+- Optimizing a bus route
+- Planning a Lego shape
+- Mixing colors to reach a target color.
+
+Student: Can you summarize the possible approaches for this task?
+
+LLM: Yes:
+1. Brute Force – try all possibilities (slow, guaranteed exact solution)
+2. Divide & Conquer – break problem into subproblems, solve and combine (organized, efficient)
+3. Greedy – step-by-step approximation (fast but may not be exact)
+4. Binary Search / Optimization – fast and suitable for precise numeric solutions
+
+Student: help me writting the possible solutions
